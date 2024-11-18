@@ -1,4 +1,4 @@
-# fastapi-code-generator
+# django-ninja-code-generator
 
 This code generator creates a FastAPI app from an openapi file.
 
