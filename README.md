@@ -1,35 +1,26 @@
 # django-ninja-code-generator
 
-This code generator creates a FastAPI app from an openapi file.
+This code generator creates a Django Ninja api from an openapi file.
 
-[![PyPI version](https://badge.fury.io/py/fastapi-code-generator.svg)](https://pypi.python.org/pypi/fastapi-code-generator)
-[![Downloads](https://pepy.tech/badge/fastapi-code-generator/month)](https://pepy.tech/project/fastapi-code-generator)
-[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/fastapi-code-generator)](https://pypi.python.org/pypi/fastapi-code-generator)
-[![codecov](https://codecov.io/gh/koxudaxi/fastapi-code-generator/branch/master/graph/badge.svg)](https://codecov.io/gh/koxudaxi/fastapi-code-generator)
-![license](https://img.shields.io/github/license/koxudaxi/fastapi-code-generator.svg)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 
 ## This project is in experimental phase.
 
-fastapi-code-generator uses [datamodel-code-generator](https://github.com/koxudaxi/datamodel-code-generator) to generate pydantic models
-
-## Help
-See [documentation](https://koxudaxi.github.io/fastapi-code-generator) for more details.
+django-ninja-code-generator uses [datamodel-code-generator](https://github.com/koxudaxi/datamodel-code-generator) to generate pydantic models
 
 
 ## Installation
 
-To install `fastapi-code-generator`:
+To install `django-ninja-code-generator`:
 ```sh
-$ pip install fastapi-code-generator
+$ pip install django-ninja-code-generator
 ```
 
 ## Usage
 
-The `fastapi-code-generator` command:
+The `django-ninja-code-generator` command:
 ```
-Usage: fastapi-codegen [OPTIONS]
+Usage: django-ninja-code-generator [OPTIONS]
 
 Options:
   -i, --input FILENAME     [required]
@@ -38,7 +29,6 @@ Options:
   -m, --model-file         Specify generated model file path + name, if not default to models.py
   -r, --generate-routers   Generate modular api with multiple routers using RouterAPI (for bigger applications).
   --specify-tags           Use along with --generate-routers to generate specific routers from given list of tags.
-  -c, --custom-visitors    PATH - A custom visitor that adds variables to the template.
   -d, --output-model-type  Specify a Pydantic base model to use (see [datamodel-code-generator](https://github.com/koxudaxi/datamodel-code-generator); default is `pydantic.BaseModel`).
   -p, --python-version     Specify a Python version to target (default is `3.8`).
   --install-completion     Install completion for the current shell.
